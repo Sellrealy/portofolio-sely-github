@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Sely 🌸</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #fff0f5;
+        margin: 0;
+        padding: 0;
+        color: #444;
+        background-image: url("asset/bg-cute.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      nav {
+        background-color: #ffe4e1;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Animasi Navbar */
+        animation: slideDown 0.5s ease-out;
+      }
+
+      .nav__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .sweet-navbar {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff0fb;
+  border: 2px solid #ffb8eb;
+  border-radius: 45px;
+  padding: 7px 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(6,6,8,7,.06);
+  font-family: 'Patrick Hand', cursive;
+}
+
+.sweet-navbar a {
+  text-decoration: none;
+  color: #9d5c9b;
+  font-size: 0.7rem;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background: #ffe2f2;
+  transition: all 0.2s ease;
+}
+
+.sweet-navbar a:hover {
+  background: #fcbff1;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+      .logo a {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #d87093;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: #d87093;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      ul li a:hover {
+        color: #ff69b4;
+      }
+
+      .section__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        gap: 2rem;
+      }
+
+      .content {
+        max-width: 500px;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #ff69b4;
+        animation: floatText 3s ease-in-out infinite;
+      }
+
+      .title {
+        font-size: 2rem;
+        color: #d87093;
+        /* Font sedikit lebih besar */
+        font-size: 2.5rem;
+      }
+
+      .title span {
+        color: #8a0a64;
+      }
+
+      .description {
+        font-size: 1rem;
+        margin-top: 1rem;
+        line-height: 1.6;
+        /* Font sedikit lebih besar */
+        font-size: 1.1rem;
+      }
+
+      .section__container button {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border: none;
+        border-radius: 20px;
+        background-color: #ffb6c1;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .section__container button:hover {
+        background-color: #ffa6c9;
+        transform: scale(1.05);
+      }
+
+      .image img {
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(5, 6, 7, 7.1);
+        animation: floatImg 3s ease-in-out infinite;
+      }
+
+      image img {
+        width: 300px;
+        cursor: pointer;
+      }
+
+      @keyframes floatImg {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes floatText {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(5px);
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      #album {
+        background-color: #fdf5e6;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+      }
+
+      #about::before {
+        content: "✨";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 2rem;
+        opacity: 0.7;
+        animation: rotate 4s linear infinite;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .gallery-item {
+        max-width: 300px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 2px 6px 10px rgba(5, 7, 5, 7.1);
+        transition: 0.3s;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.35);
+        filter: brightness(1.0);
+        }
+
+      .gallery-item p {
+        font-size: 1.0rem;
+        margin-top: 0.5rem;
+        color: #666;
+      }
+
+      #portfolio {
+        background-color: #f7e0fe;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .portfolio-item {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .portfolio-item:hover {
+        transform: scale(1.02);
+        background-color: #f0e6ff;
+      }
+
+    .glitter {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-repeat: repeat;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+/* Tambahan gaya stiker/gif */
+#qna-chat {
+  background: linear-gradient(135deg, #fff0f5, #e0fff9);
+  padding: 50px 20px;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* GIF lucu di pojok */
+.gif-corner {
+  width: 80px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transform: rotate(15deg);
+  z-index: 1;
+}
+
+/* Dekorasi stiker bintang di pojok kiri bawah */
+#qna-chat::after {
+  content: '✨💖⭐️';
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-size: 22px;
+  opacity: 0.7;
+  animation: floating 2s ease-in-out infinite alternate;
+}
+
+/* Floating animasi dekor */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
+}
+
+
+      /* Gaya untuk bagian cerita */
+      #cerita {
+        background-color: #ffefd5;
+        /* Warna lebih cerah */
+        padding: 2rem;
+        border-radius: 15px;
+        margin-top: 2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #cerita h2 {
+        color: #d87093;
+        /* Warna judul lebih menonjol */
+        text-align: center;
+        font-size: 1rem;
+        /* Ukuran judul lebih besar */
+        margin-bottom: 1.5rem;
+        /* Jarak bawah lebih besar */
+      }
+
+      #cerita p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 1rem;
+      }
+
+      #cerita .dialogue {
+        font-style: italic;
+        color: #777;
+      }
+
+      #song-story {
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fce0f3, #fdade8);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#song-story h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff6fa2;
+  margin-bottom: 30px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.song-container {
+  position: relative;
+  display: inline-block;
+  animation: fadeInUp 1s ease;
+  z-index: 2;
+}
+
+.spotify-code {
+  width: 420px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(255, 121, 172, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.spotify-code:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Dekorasi GIF */
+.dekorasi {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  z-index: 3;
+  animation: float 4s ease-in-out infinite;
+}
+
+.heart {
+  top: -20px;
+  left: -30px;
+}
+
+.bintang {
+  bottom: -10px;
+  right: -30px;
+}
+
+.note {
+  top: 10px;
+  right: 40px;
+}
+
+/* Background GIF lucu */
+.gif-bg {
+  position: absolute;
+  width: 150px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.gif1 {
+  top: 10%;
+  left: 10%;
+}
+
+.gif2 {
+  bottom: 5%;
+  right: 10%;
+}
+
+/* Animasi */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}3
+
+<!-- Font tulisan tangan -->
+
+  body {
+    background: linear-gradient(180deg, #e0cfff, #d0f4de);
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.book {
+  width: 600px;
+  height: 350px;
+  perspective: 1500px;
+  position: relative;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.page .front, .page .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff0f9;
+  border: 2px solid #ffcbe8;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border-radius: 12px;
+}
+
+.page .back {
+  transform: rotateY(180deg);
+  background: #ffe9f8;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: none;
+  background: #ffb8eb;
+  color: white;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #ff8dd3;
+}
+
+  .entry {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    z-index: 1;
+    position: relative;
+    min-height: 160px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #d9b3ff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    transition: background 0.2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #c89cff;
+  }
+
+  @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo"><a href="#">🌷 BIODATA </a></div>
+          <div class="sweet-navbar">
+        <ul>
+          <li><a href="#album">My Album 🎞</a></li>
+          <li><a href="#portfolio">Portfolio 🌟</a></li>
+          <li><a href="#About"> About Me 🧏🏻</a></li>
+          <li><a href="#cerita">My Story 💌</a></li>
+          <li>
+            <a href="https://wa.me/6288222007023" target="_blank"> Contact WA 💬</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="home">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">Haiii~ 🌼</p>
+          <h1 class="title">
+            Aku <span>Sely Permata Sari</span><br />
+            Siswi & Calon Developer ✨
+          </h1>
+          <p class="description">
+            Halo teman-teman! Namaku Sely, aku siswi kelas X PPLG 1 di SMKN 2
+            Sumedang. Aku suka membaca buku, coding lucu, dan belajar hal baru
+            💻📚. Yuk kenalan lebih jauh di bawah~!
+          </p>
+          <div class="section__container button">
+            <button
+              onclick="window.location.href='https://www.instagram.com/offllyy_/'"
+            >
+              <i class="ri-instagram-line"></i> @offllyy_
+            </button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="asset/photobooth (4).png" alt="Sely" />
+        </div>
+      </div>
+    </section>
+
+    <section id="album">
+      <h2>📸 MY ALBUM 🖼</h2>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="asset/1719220028340.jpg" id="gambar" alt="Spelansu" />
+          <p>Foto waktu bareng alumni 🌈</p>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/IMG_20250430_210410.JPG" alt="squad coding" />
+          <p>Squad Eskul Coding Nieh Boss 📷</p>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/IMG_20250430_211214.JPG" alt="Saka Bhayangkara" />
+          <p>Kenangan Masa Penuh Perjuangan ✨</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_031519.JPG" alt="Keluarga" />
+          <p>With My Extended Family 🌺</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_031835.JPG" alt="Keluarga" />
+          <p>With My Family 📸</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/Screenshot_20250105_144704.JPG" alt="Kenangan SD" />
+          <p> Kenangan SD Pramuka Pada Masanya 🤙</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_032531.JPG" alt="Bestie" />
+          <p>With My Bubub Salma 💗</p>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/IMG_20250430_210610.JPG" alt="Me" />
+          <p>Song About You! 🎧</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/1744814421724.jpg" alt="Sely Versi Imut" />
+          <p>My Childhood Photo ✨</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_034249.JPG" alt="Mirror" />
+          <p>Selfie Mirror Episode 1 Well 😎</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_034420.JPG" alt="Mirror" />
+          <p>Selfie Mirror Episode 2 Kiw 😘</p>
+        </div>
+        <div class="gallery-item">
+          <img src="fot/IMG_20250501_035303.JPG" alt="Pap Bonus" />
+          <p>Me Zona Centilnya 💋</p>
+        </div>
+        
+
+      </div>
+    </section>
+
+    
+    
+    
+
+    <section id="portfolio">
+      <h2>🎨 MY PORTOFLIO  : </h2>
+      <div class="portfolio-item">
+        <p>Aku suka desain UI dengan warna pastel ✿</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Pernah bikin web biodata seperti ini! 💖</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Lagi belajar animasi & coding interaktif 🌈</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Menggambar juara idea kreatif 🏆 </p>
+      </div>
+      <div class="portfolio-item">
+        <p>Membuat cerita keabadiannya 📖</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Membuat chat bot WhatsApp 🤖</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Content creator youtuber 📢</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Literasi novel genre romance 💟</p>
+      </div>
+      <div class="portfolio-item">
+        <p>Maraton lari 291meter lebih 7x 🏃🏻‍♀️</p>
+      </div>
+    </section>
+
+    <section
+      id="fun-facts"
+      style="
+        background-color: #fffafc;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+        alt="Star deco"
+        style="
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          width: 80px;
+          opacity: 0.2;
+          animation: spin 20s linear infinite;
+        "
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+        alt="Star deco"
+        style="
+          position: absolute;
+          bottom: -20px;
+          right: -20px;
+          width: 80px;
+          opacity: 0.2;
+          animation: spin 30s linear infinite reverse;
+        "
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3468/3468080.png"
+        alt="Cute deco"
+        style="
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 50px;
+          opacity: 0.3;
+        "
+      />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3468/3468126.png"
+        alt="Heart deco"
+        style="
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          width: 60px;
+          opacity: 0.3;
+        "
+      />
+
+      <section id="About"></section>
+      <h2 style="color: #d87093; font-size: 1.8rem">
+        🎀 Fakta Lucu About Me :
+      </h2>
+      <p style="color: #666; margin-bottom: 1rem">
+        Centang yang paling menggambarkan aku banget~ 🌷
+      </p>
+      <form
+        style="
+          display: flex; 
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          max-width: 950px;
+          margin: 0 auto;
+        "
+      >
+        <label
+          style="
+            background-color: #ffe4e1;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            animation: bounce 3s infinite;
+          "
+          >🍜 Mie ayam favorit</label
+        >
+        <label
+          style="
+            background-color: #e0ffff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🎮 Game Simulasi & Puzzle</label
+        >
+        <label
+          style="
+            background-color: #e6e6fa;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            animation: pulse 4s infinite;
+          "
+          >🎬 Film: Romansa & Anime</label
+        >
+        <label
+          style="
+            background-color: #f0fff0;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >📚 Baca novel & journaling</label
+        >
+        <label
+          style="
+            background-color: #fffacd;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            animation: bounce 5s infinite;
+          "
+          >✨ Dasprog & Bahasa</label
+        >
+        <label
+          style="
+            background-color: #f5f5dc;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🏸 Badminton & Jalan Sore</label
+        >
+        <label
+          style="
+            background-color: #ffe4b5;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🌅 Sunset vibes & senja</label
+        >
+        <label
+          style="
+            background-color: #ffdab9;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            animation: pulse 6s infinite;
+          "
+          >💕Koleksi pencinta boneka</label
+        >
+        <label
+          style="
+            background-color: #e0ffff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🎧 Musik mellow + dreamy + lofi</label
+        >
+        <label
+          style="
+            background-color: #f8f8ff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🍰 Jajanan manis & es krim</label
+        >
+        <label
+          style="
+            background-color: #ffe4f3;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >💌 Chat panjang tapi typo</label
+        >
+        <label
+          style="
+            background-color: #f0ffff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >📸 Si Foto mirror 😆</label
+        >
+        <label
+          style="
+            background-color: #fdf5e6;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🥤 Boba & Es teh</label
+        >
+        <label
+          style="
+            background-color: #f0f8ff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🎨 Si Kreatif Well</label
+        >
+        <label
+          style="
+            background-color: #fff5ee;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🌙 Tim begadang tapi ngantuk</label
+        >
+        <label
+          style="
+            background-color: #ffe4e1;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🐰 Si Koleksi stiker lucu</label
+        >
+        <label
+          style="
+            background-color: #faf0e6;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >🎀 Paling Suka tema pastel</label
+          >
+          <label
+          style="
+            background-color: #e0ffff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+          "
+          >💤 Napping is a lifestyle</label
+        >
+      </form>
+    </section>
+
+    
+<section id="qna-chat">
+  <h2>💬 Ask Me Anything</h2>
+  <img src="https://media.giphy.com/media/Ll22OhMLAlVDb8UQWe/giphy.gif" class="gif-corner" alt="Cute bear" />
+  
+  <div class="chat-container">
+    <!-- Chat 1 -->
+    <div class="chat q">
+      <p><strong>Temen 🧠:</strong> Pernah suka diam-diam sama orang? 😳</p>
+    </div>
+    <div class="chat a">
+      <p><strong>Aku 🙋🏻‍♀️:</strong> Hobiku itu, next question 😭✨</p>
+    </div>
+
+    <!-- Chat 2 -->
+    <div class="chat q">
+      <p><strong>Temen 🐸:</strong> Kapan terakhir kali nangis? 😭</p>
+    </div>
+    <div class="chat a">
+      <p><strong>Aku 😌:</strong> Waktu nonton video anak kucing ketemu induknya 😿💔</p>
+    </div>
+
+    <!-- Chat 3 -->
+    <div class="chat q">
+      <p><strong>Temen 👀:</strong> Lagi suka siapa? 🤭</p>
+    </div>
+    <div class="chat a">
+      <p><strong>Aku 🤫:</strong> Scroll aja sampe habis… hint-nya ada kok 😜💘</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Ditempatkan sebelum section #cerita -->
+
+    <section id="cerita" style=" 
+    font-size: 18px; 
+    font-family: 'Comic Sans MS', cursive; 
+    line-height: 1.9; 
+    padding: 30px; 
+    background: url('https://i.pinimg.com/originals/f6/b1/26/f6b126b9c99c70a30670abf991fef88b.jpg') no-repeat center center;
+    background-size: cover; 
+    border-radius: 30px; 
+    box-shadow: 0 0 25px #ffcde4; 
+    color: #3f3f3f; 
+    margin: 40px auto; 
+    max-width: 900px; 
+    position: relative; 
+    background-attachment: fixed; 
+  ">
+
+<div class="glitter"></div>
+    <h2 style="text-align: center; color: #ff6fa3; font-size: 26px;">👀 Kisah Cinta yang Aneh Tapi Menarik 💭</h2>
+  
+    <p><strong>Episode 1 - 15 Februari 2023</strong></p>
+    <p>Hai, nama aku Sely! Aku mau cerita sedikit tentang kisah ku yang agak aneh tapi menarik. Jadi, aku itu 14 tahun, kelas 8 SMP, dan jujur aja, aku anaknya pendiam banget di kelas. Pagi itu, pelajaran baru aja dimulai, guru ngasih tugas kelompok, dan langsung aja aku mikir, “Bersama siapa ya?”</p>
+  
+    <p>Kelompok udah penuh semua, cuma ada empat orang yang nggak punya kelompok. Dan ternyata, aku jadi terpaksa masuk ke kelompok yang... yah, mereka beda banget sama aku. Tapi nggak apa-apa lah, akhirnya kita kerjain tugas bareng-bareng. Tugasnya selesai, dan hasilnya? Lumayan banget, 98% memuaskan. Ya, nggak heran sih, kan aku yang kerjain hampir semuanya 😆.</p>
+  
+    <p>Yang bikin makin menarik, tiba-tiba ada pesan masuk di handphone aku. Itu dari si <strong>Muffin</strong>. Sebenarnya, aku nggak terlalu kenal dia, tapi ya udah deh, kita ngobrol soal tugas. Eh, lama-lama, dia mulai nanya-nanya soal kehidupan pribadi aku. “Kamu udah punya pacar?” Tanya Muffin. Aku jawab dengan santai, “Gak, aku anaknya pendiam, gak pernah gaul.”</p>
+  
+    <p>Setelah itu, obrolannya jadi makin aneh. “Kamu tinggal dimana?” “Kamu wibu ya?” Gila, pertanyaan dia makin dalam aja kayak lagi nyelam sampe dasar laut! Tapi aku jawab aja, santai, “Gak pernah pacaran, nggak suka yang ribet.”</p>
+  
+    <p>Hari-hari pun berlalu, dan tugas kita akhirnya dinilai. Nilainya 98%! Seneng sih, tapi ada yang lebih aneh lagi. Muffin kayaknya mulai tertarik sama aku. Tapi aku bingung, soalnya dia udah punya pacar, kan? Toh, aku juga nggak terlalu mikirin itu, karena dia kayaknya emang gak serius.</p>
+  
+    <p>Aku mulai merasa cemburu dikit, ya nggak tahu kenapa. Ceweknya si Muffin itu cantik sih, tapi kok agak centil gitu ya? Aku sih nggak suka banget sama yang gitu-gitu. Aku malah ngerasa insecure, karena fisikku nggak se-good looking mereka.</p>
+  
+    <p>Gue juga suka pakai masker, bukan karena aku malu, tapi lebih ke nggak pengen temen-temen gue ngejauh karena penampilan gue. Padahal, gue mikir, mungkin mereka juga nggak peduli sama itu. Tapi gue juga merasa agak aneh deh kalau lagi ketemu mereka. Malah gue jadi yang ngejauh sendiri. Ya begitulah hidupku, kawan.</p>
+  
+    <p>Di sisi lain, Muffin yang kayaknya mulai naksir, mulai ngelakuin hal-hal aneh kayak tatap-tatap mata terus. Duh, aku bingung banget, apa sih maksudnya? Kok bisa gitu, dia kayaknya nunggu aku buat ngode balik. Cuma ya, aku juga gak paham, jadi ya kebingunganku berlanjut.</p>
+  
+    <p>Pernah beberapa kali, Muffin ngelihatin aku di jalan, di kelas waktu praktikum, bahkan pas pelajaran PJOK! Sampai ada satu kejadian lucu banget, pas gue lagi ngaca di depan kelas, eh dia lagi ngelihatin gue. Apaan sih?! Aku salting parah, gak tahu harus ngapain, sampe bingung, kenapa sih dia sering banget ngelakuin itu?</p>
+  
+    <p>Gue pikir, "Kenapa ya dia suka ngeliatin aku gitu?" Tapi, setelah beberapa kali ketemu di jalan, aku mulai berpikir, mungkin Muffin emang ada rasa, atau mungkin ini cuma gue yang overthinking.</p>
+  
+    <p style="text-align: center; color: #ff6fa3;"><em>— Tamat untuk Episode 1. Tapi siapa tau, ada episode baru yang lebih seru, kan? —</em></p>
+  
+    <p><strong>Episode 2 - 27 Januari 2024</strong></p>
+    <p>Hai, sorry banget udah lama gak cerita. Banyak banget yang terjadi belakangan ini, dan aku nggak bisa fokus ke cerita ini. Tapi sekarang aku kembali, let's go! 🕺</p>
+  
+    <p>Pada tanggal yang sama, 27 Januari, dunia aku bener-bener berubah. Hari itu, aku kehilangan ayahku, dan anehnya, itu juga bertepatan dengan ulang tahun Muffin. Dunia aku lagi hancur, dan aku gak tahu harus ngapain. Tapi meskipun dalam kesedihan, aku coba untuk bangkit lagi. Teman-teman di sekolah banyak yang ngedukung aku, dan itu bener-bener bikin aku kuat.</p>
+  
+    <p>Jadi, Muffin juga mulai ngedukung aku lewat sosmed. Dia nggak bilang langsung, tapi aku bisa ngerasa dia peduli. Cuma, gue bingung kenapa dia suka banget puter lagu "Avenged Sevenfold" terus menerus. Itu kan lagu tentang kematian? Aneh banget deh.</p>
+  
+    <p>Habis itu, aku lihat Muffin pergi ke Borobudur, dan ternyata dia nongkrong sama cewek lain. Gue bingung banget, tapi ya udah, gue cuma bisa liat dari jauh. Kenapa sih dia tiba-tiba galau gitu? Aku jadi makin bingung deh dengan semua ini.</p>
+  
+    <p style="text-align: center; color: #ff6fa3;"><em>— Tamat untuk Episode 2. Siapa yang tahu apa yang bakal terjadi selanjutnya? —</em></p>
+  
+    <p style="text-align: center;">💌 Sekian cerita ngawurku hari ini. Semoga menghibur ya guys! Jangan lupa follow IG-ku <a href="https://instagram.com/offllyy_" target="_blank" style="color: #ff6fa3;">@offllyy_</a> buat liat keseharianku yang absurd ini. Bye bye!</p>
+  </section>
+
+
+  <!-- SONG STORY SECTION -->
+<section id="song-story">
+  <h2>🎵 Song Story</h2>
+  <div class="song-container">
+    <img src="hh/IMG_20250502_215138.JPG" alt="Spotify Code" class="spotify-code">
+    <!-- Dekorasi lucu -->
+    <img src="hh/uwu.gif" class="dekorasi heart">
+    <img src="hh/bunny-bun.webp" class="dekorasi bintang">
+    <img src="hh/odsanyu-flower.webp" class="dekorasi note">
+  </div> 
+</section>
+  
+  </body>
+</html>

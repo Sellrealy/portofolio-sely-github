@@ -1,0 +1,50 @@
+<!-- Tambahan section baru untuk minat, hobi, dan lainnya -->
+<section id="fun-facts" style="background-color: #fffafc; padding: 2rem; text-align: center; position: relative; overflow: hidden;">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Star deco" style="position: absolute; top: -20px; left: -20px; width: 80px; opacity: 0.2; animation: spin 20s linear infinite;">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Star deco" style="position: absolute; bottom: -20px; right: -20px; width: 80px; opacity: 0.2; animation: spin 30s linear infinite reverse;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468080.png" alt="Cute deco" style="position: absolute; top: 10px; right: 10px; width: 50px; opacity: 0.3;">
+  <img src="https://cdn-icons-png.flaticon.com/512/3468/3468126.png" alt="Heart deco" style="position: absolute; bottom: 0; left: 10px; width: 60px; opacity: 0.3;">
+
+  <h2 style="color: #d87093; font-size: 1.8rem;">🎀 Fakta Lucu Tentang Aku</h2>
+  <p style="color: #666; margin-bottom: 1rem;">Centang yang paling menggambarkan aku banget~ 🌷</p>
+  <form style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 950px; margin: 0 auto;">
+    <label style="background-color: #ffe4e1; padding: 0.7rem 1.2rem; border-radius: 30px; animation: bounce 3s infinite;">🍕 Suka Pizza</label>
+    <label style="background-color: #e0ffff; padding: 0.7rem 1.2rem; border-radius: 30px;">🎮 Game Simulasi & Puzzle</label>
+    <label style="background-color: #e6e6fa; padding: 0.7rem 1.2rem; border-radius: 30px; animation: pulse 4s infinite;">🎬 Film: Romcom & Anime</label>
+    <label style="background-color: #f0fff0; padding: 0.7rem 1.2rem; border-radius: 30px;">📚 Baca novel & journaling</label>
+    <label style="background-color: #fffacd; padding: 0.7rem 1.2rem; border-radius: 30px; animation: bounce 5s infinite;">✨ Dasprog & Bahasa</label>
+    <label style="background-color: #f5f5dc; padding: 0.7rem 1.2rem; border-radius: 30px;">🏸 Badminton & Jalan Sore</label>
+    <label style="background-color: #ffe4b5; padding: 0.7rem 1.2rem; border-radius: 30px;">🌅 Sunset vibes & senja</label>
+    <label style="background-color: #ffdab9; padding: 0.7rem 1.2rem; border-radius: 30px; animation: pulse 6s infinite;">🐶 Tim anabul & peluk boneka</label>
+    <label style="background-color: #e0ffff; padding: 0.7rem 1.2rem; border-radius: 30px;">🎧 Musik mellow + dreamy + lofi</label>
+    <label style="background-color: #f8f8ff; padding: 0.7rem 1.2rem; border-radius: 30px;">🍰 Jajanan manis & es krim</label>
+    <label style="background-color: #ffe4f3; padding: 0.7rem 1.2rem; border-radius: 30px;">💌 Chat panjang tapi typo</label>
+    <label style="background-color: #f0ffff; padding: 0.7rem 1.2rem; border-radius: 30px;">📸 Foto mirror wajib 😆</label>
+    <label style="background-color: #fdf5e6; padding: 0.7rem 1.2rem; border-radius: 30px;">🧋 Boba & teh tarik</label>
+    <label style="background-color: #f0f8ff; padding: 0.7rem 1.2rem; border-radius: 30px;">🎨 Ngide jam 2 pagi</label>
+    <label style="background-color: #fff5ee; padding: 0.7rem 1.2rem; border-radius: 30px;">🌙 Tim begadang tapi ngantuk</label>
+    <label style="background-color: #ffe4e1; padding: 0.7rem 1.2rem; border-radius: 30px;">🐰 Koleksi stiker lucu</label>
+    <label style="background-color: #faf0e6; padding: 0.7rem 1.2rem; border-radius: 30px;">🍓 Suka tema pink pastel</label>
+    <label style="background-color: #e0ffff; padding: 0.7rem 1.2rem; border-radius: 30px;">💤 Napping is a lifestyle</label>
+  </form>
+</section>
+
+<style>
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<!-- Ditempatkan sebelum section #cerita -->
